@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -10,79 +11,89 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/styles.css" />
-    <title>Jesus Doge</title>
   </head>
   <body>
-    <h1>Jesus Doge</h1>
+    <header>
+      <nav>
+        <input id="nav-toggle" type="checkbox" />
+        <div class="logo"><strong>JESUS DOGE</strong></div>
+        <ul class="links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#intro">INTRO</a></li>
+          <li><a href="#info">INFO</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+      </nav>
+    </header>
     <main>
-      <div class="header">
+      <div class="headerImg" id="home">
         <img
-          id="headerImg"
           src="./images/jesus_doge_mob.jpg"
-          alt="Jesus Doge Coin"
+          alt="jesus doge"
+          class="center"
         />
       </div>
 
-      <div class="main">
-        <nav>
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xaF15c997c9190Ff1f598620f2d9a6B7806A97641"
-                target="_blank"
-                ><button type="button" class="btn btn-warning">Buy</button></a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="https://poocoin.app/tokens/0xaf15c997c9190ff1f598620f2d9a6b7806a97641"
-                target="_blank"
-                ><button type="button" class="btn btn-success">Chart</button></a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="https://t.me/jesusdogeelon"
-                target="_blank"
-                ><button type="button" class="btn btn-light">
-                  Telegram
-                </button></a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="https://twitter.com/JesusDoge2"
-                target="_blank"
-                ><button type="button" class="btn btn-secondary">
-                  Twitter
-                </button></a
-              >
-            </li>
-          </ul>
-        </nav>
+      <div class="buttons">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xaF15c997c9190Ff1f598620f2d9a6B7806A97641"
+              target="_blank"
+              ><button type="button" class="btn btn-warning">Buy</button></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="https://poocoin.app/tokens/0xaf15c997c9190ff1f598620f2d9a6b7806a97641"
+              target="_blank"
+              ><button type="button" class="btn btn-success">Chart</button></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="https://t.me/jesusdogeelon"
+              target="_blank"
+              ><button type="button" class="btn btn-light">Telegram</button></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="https://twitter.com/JesusDoge2"
+              target="_blank"
+              ><button type="button" class="btn btn-secondary">
+                Twitter
+              </button></a
+            >
+          </li>
+        </ul>
       </div>
-      <div class="description">
+      <div class="description" id="intro">
         <p>
           Community-owned memecoin in response to Elon Musk's tweet, the DOGE
           that everyone can pet while spreading it's holy vibes to holders
           through yield farming and saving your fees by being fairlaunched on
-          PANCAKESWAP!
+          PANCAKESWAP! A charity wallet was collectively created by the community in order to make donations to the charity of our choice.
         </p>
-        <img src="./images/tweet.jpg" alt="Jesus Doge tweet" />
-        <p id="info">
+        <img class="center" src="./images/tweet.jpg" alt="tweet-jesus-doge" />
+      </div>
+      <div id="info">
+        <p>
           <strong>Token Information:</strong> <br />
           <br />
-          Name: JesusDoge
+          Name: JesusDoge <p style="margin-right:3em">Symbol: JD</p> 
           <br />
-          Symbol: JD
-          <br />
-          Total Supply: 10,000,000,000,000,000.00
-          <br />
-          Total Burnt at Launch: 9,000,000,000,000,000.00
+          <p style="margin-right:2em">Total Supply: 10,000,000,000,000,000.00</p>
+        
+          <p style="margin-left:1em">Total Burnt at Launch: 9,000,000,000,000,000.00</p>
           <br />
           <br />
           A transcation fee is applied on every transaction where JD is
@@ -90,8 +101,8 @@
           token to be DEFLATIONARY!
         </p>
       </div>
-      <div class="token_info">
-        <nav>
+
+      <div class="buttons">
           <ul class="nav justify-content-center">
             <li class="nav-item">
               <a
@@ -114,18 +125,9 @@
               >
             </li>
           </ul>
-        </nav>
       </div>
-      <div>
-        <p id="info">
-          <strong>Roadmap:</strong> <br />
-          <br />
-          Early on our plan as a community will be to grow bigger in terms of
-          holders, spread the word about the holy JesusDoge through
-          community-initiated marketing methods on various social media
-          platforms. Midterm we will work on getting listed on coingecko and
-          coinmarketcap while longterm we will aim for a centralized exchange!
-        </p>
+      <div class="coming-soon">
+        <p>Coming soon... Community decisions will be able to be properly communicated amongst the community using a website-driven governance model</p>
       </div>
     </main>
   </body>
